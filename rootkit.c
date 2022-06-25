@@ -6,6 +6,9 @@ MODULE_AUTHOR("Parker");
 MODULE_DESCRIPTION("My first rootkit");
 MODULE_VERSION("0.00");
 
+
+#include "ftrace_helper.h"
+
 static int __init rootkit_init(void)
 {
 	printk(KERN_INFO "rootkit: Loaded >:-)\n");
